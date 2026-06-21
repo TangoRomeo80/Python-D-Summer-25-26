@@ -50,4 +50,58 @@
 # for i in range(5):
 #     print(i)
 
-print(list(range(5)))
+# print(list(range(5)))
+
+# fruits = ["apple", "banana", "cherry"]
+# for fruit in fruits:
+#     print(fruit)
+
+# numbers = [0, 1, 2, 3, 4]
+# numbers = list(range(5))
+# for i in range(5):
+#     print(i, end=" ")
+# print()
+# for i in range(1, 6):
+#     print(i, end=" ")
+# print()
+# for i in range (2, 11, 2):
+#     print(i, end=" ")
+# for i in range(10, 0, -2):
+#     print(i, end=" ")
+# print()
+
+# word = "Python"
+# for char in word:
+#     print(char)
+
+# marks = [85, 92, 78, 96, 88]
+# print(sum(marks))
+# total = 0
+# for mark in marks:
+#     total += mark
+# print(total)
+
+# for i in range(1, 4):
+#     for j in range(1, 4):
+#         print(i, "x", j, "=", i * j)
+#     print("-----")
+
+# i = 0
+# while True:
+#     i += 1
+#     if i == 2:
+#         continue
+#     print(i)
+#     if i >= 5:
+#         break
+
+# n = int(input("Enter a number: "))
+# if n % 3 == 0 and n % 5 == 0:
+#     print("FizzBuzz")
+# elif n % 3 == 0:
+#     print("Fizz")
+# elif n % 5 == 0:
+#     print("Buzz")
+# else:
+#     print(n)
+
