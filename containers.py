@@ -52,3 +52,30 @@ students = ['Alice', 'Bob', 'Charlie', 'David']
 # even_numbers = [x for x in numbers if x % 2 == 0]
 # print(even_numbers)
 
+# Use tuples when 
+# 1. Order matters
+# 2. Values should not change
+# 3. You want to represent fixed records
+# 4. You need sequence for dictionary keys or sets
+# point = (10, 20)
+# student = ('Alice', 20, 'A')
+# x = [10]
+# y = (10)
+# print(type(x))  # Output: <class 'list'>
+# print(type(y))  # Output: <class 'int'>
+# y = (10,)
+# print(type(y))
+# a, b = (10, 20) # Tuple unpacking
+# print(a)  # Output: 10
+# print(b)  # Output: 20
+
+# a, b = 10, 20
+# print(a)
+# print(b)
+
+# Function returns multiple values as a tuple
+# def caluculate(a: int, b: int) -> tuple:
+#     sum_result = a + b
+#     product_result = a * b
+#     return sum_result, product_result
+
