@@ -79,3 +79,89 @@ students = ['Alice', 'Bob', 'Charlie', 'David']
 #     product_result = a * b
 #     return sum_result, product_result
 
+# Modifying mutable objects in an immutable object
+# data = ([10, 20], [30, 40])
+# data[1].append(50)
+# print(data)
+
+# Use set when:
+# 1. Duplicate values should not exist
+# 2. Order does not matter
+# 3. Mathematical set operations are needed
+# 4. Fast membership check is required
+
+unique_numbers = {1, 2, 3, 4, 5}
+# unique_ids = {} # This will not declare a set, it will declare a dictionary. To declare an empty set, use set()
+# empty_set = set()  # Correct way to declare an empty set
+# marks = [80, 85, 80, 91, 92, 92, 100]
+# unique_marks = set(marks)
+# print(unique_marks)
+unique_numbers.add(6)  # Adds 6 to the set
+# print(unique_numbers)  # Output: {1, 2, 3, 4, 5, 6}
+# unique_numbers.remove(10)  # Removes 3 from the set
+# unique_numbers.discard(10)  # Removes 3 from the set if it exists, does nothing if it doesn't
+# print(unique_numbers)  # Output: {1, 2, 4, 5, 6}
+# print(7 in unique_numbers)  # Output: False
+
+# ds_students = {'Alice', 'Bob', 'Charlie', 'David'}
+# club_members = {'Charlie', 'David', 'Eve', 'Frank'}
+
+# print(ds_students.union(club_members))  # Union of two sets
+# print(ds_students | club_members)  # Union of two sets using | operator
+# print(ds_students.intersection(club_members))  # Intersection of two sets
+# print(ds_students & club_members)  # Intersection of two sets using & operator
+# print(ds_students.difference(club_members))  # Difference of two sets
+# print(club_members - ds_students)  # Difference of two sets using - operator
+# print(ds_students.symmetric_difference(club_members))  # Symmetric difference of two sets
+# print(ds_students ^ club_members)  # Symmetric difference of two sets using ^ operator
+
+# Set conatining immutable objects
+# mixed_set = {1, 2, (3, 4), 'Hello'}
+# print(mixed_set)
+# Set containing mutable objects will raise an error
+# mutable_set = {1, 2, [3, 4], 'Hello'}  # This will raise a TypeError
+# print(mutable_set)
+
+# Use a dictionary when:
+# 1. You want to associate keys with values
+# 2. You want fast lookups by key
+# 3. Data is supposed to have labels or attributes
+# 4. You need to represent structured information
+
+test = {} # This will declare a dictionary, not a set. To declare an empty set, use set()
+student = {
+    "id": 1,
+    "name": "Alice",
+    "age": 20,
+    "department": "Computer Science",
+}
+# print(student["id"])
+# print(student.get("name", "Not found"))  # Output: Alice
+# student["cgpa"] = 3.8  # Adds a new key-value pair
+# student["age"] = 21  # Updates the value for the key "age"
+# print(student)
+# Removing with pop() method
+# student.pop('department')  # Removes the key "department" and its value
+# print(student)
+# for key in student:
+#     print(key, ":", student[key])
+# for key,value in student.items():
+#     print(key, ":", value)
+
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+# for i in range(len(matrix)):
+#     for j in range(len(matrix[i])):
+#         print(matrix[i][j], end=' ')
+#     print()  # New line after each row
+
+# students = [
+#     {"id": 1, "name": "Alice", "age": 20},
+#     {"id": 2, "name": "Bob", "age": 22},
+#     {"id": 3, "name": "Charlie", "age": 21}
+# ]
+# for student in students:
+#     print(f"ID: {student['id']}, Name: {student['name']}, Age: {student['age']}")
