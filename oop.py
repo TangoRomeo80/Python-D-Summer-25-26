@@ -80,7 +80,7 @@
 #     def waddle(self):
 #         return "Waddle! Waddle!"
 
-# Multiple inheritance
+# Multiple inheritancegit
 # class Duck(Flyer, Swimmer):
 #     def quack(self):
 #         return "Quack! Quack!"
