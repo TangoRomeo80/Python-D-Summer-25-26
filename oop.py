@@ -93,3 +93,44 @@
 # print(d.fly()) # Output: I believe I can fly!
 # print(d.swim()) # Output: I believe can swim!
 
+# Polymorphism
+# Python can directly implement runtime polymorphism (Overriding)
+# Python do not have typical compile-time polymorphism (Overloading) like C++ or Java. 
+# But we can implement it using default arguments.
+# from typing import override
+
+# class Worker:
+#     def work(self):
+#         return "Working"
+# class Teacher(Worker):
+#     pass
+#     # def work(self):
+#     #     return "Teaching students"
+
+# class Student(Worker):
+#     @override
+#     def work(self):
+#         return "Learning from teachers"
+    
+# class Engineer(Worker):
+#     @override
+#     def work(self):
+#         return "Building things"
+    
+# class Doctor(Worker):
+#     @override
+#     def parent_work(self):
+#         return super().work()
+    
+#     @override
+#     def work(self):
+#         return "Treating patients"
+    
+# d = Doctor()
+# print(d.parent_work())  # Output: Working
+# workers = [Teacher(), Student(), Engineer(), Doctor()]
+# for worker in workers:
+#     print(worker.work())
+
+
+
